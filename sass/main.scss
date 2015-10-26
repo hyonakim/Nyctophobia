@@ -1,0 +1,154 @@
+@import "bourbon";
+@import "font-awesome";
+
+
+//cool colors
+$grayColor: #393939;
+$lightGray: #6F706F;
+
+
+//cool fonts 
+$bloodFont: 'Nosifer', cursive;
+$kingFont: 'Loved by the King', cursive;
+
+
+body {
+		background: $grayColor;
+
+	  .showTitle {
+	  	color: red;
+	  	text-align: center;
+	  	font-family: $bloodFont;
+	  	font-size: 2em;
+	  }
+
+	  .instruction {
+	  	font-family: $kingFont;
+	  	font-size: 30px;
+	  	color: $lightGray;
+	  	text-align: center;
+	  	margin-bottom: 10%;
+	  }
+
+	  .player1,
+	  .player2 {
+	  	color: #fff;
+	  	width: 40%;
+	  	margin: 0 0 0 5%;
+	  	display: inline-block;
+	  	z-index: 0;
+
+	  	.tacotext,
+	  	.burgertext {
+	  		color: $lightGray;
+	  		font-size: 20px;
+	  		margin-left: 32%;
+	  		margin-top: 20px;
+	  	}
+
+	  	.p1health, 
+	  	.p2health {
+	  		font-family: $kingFont;
+	  		color: $lightGray;
+	  		margin-left: 16%;
+	  	}
+
+	  	.deadburger {
+	  		color: red;
+	  		font-family: $bloodFont;
+	  		font-size: 16px;
+	  		text-align: center;
+	  		padding: 8px;
+	  		background: #000;
+	  		border: 1px solid black;
+	  		border-radius: 10px;
+	  		@include transition(all 2.0s ease-in-out);
+	  		position: absolute;
+	  		top: 355px;
+	  		right: 210px;
+			}
+
+	  	.deadtaco {
+	  		color: red;
+	  		font-family: $bloodFont;
+	  		font-size: 16px;
+	  		text-align: center;
+	  		padding: 8px;
+	  		background: #000;
+	  		border: 1px solid black;
+	  		border-radius: 10px;
+	  		@include transition(all 2.0s ease-in-out);
+	  		position: absolute;
+	  		top: 355px;
+	  		left: 30px;
+	  	}
+
+	  	h2 {
+	  		font-family: $bloodFont;
+	  		margin-left: 36%;
+	  		color: red;
+	  	}
+
+			.taco {
+		  	width: 40%;
+		  	margin-left: 28%;
+		  }
+
+		  .burger {
+		  	width: 30%;
+		  	margin-left: 35%;
+		  }
+
+		  .attack {
+		  	margin: 0 0 0 42%;
+		  	background: red;
+		  	border: 1px solid red;
+		  	border-radius: 22px;
+		  	padding: 10px;
+		  	@include button(pill, black);
+		  }
+	}
+
+	.slenderhidden {
+		display: none;
+	}
+
+	.slendershow1 {
+		background: url('/images/slenderman.png');
+    display: inline;
+    position: absolute;
+    top: 135px;
+    left: 168px;
+    z-index: -1;
+	}
+
+	.slendershow2 {
+		background: url('/images/slenderman.png');
+    display: inline;
+    position: absolute;
+    top: 135px;
+    right: 240px;
+    z-index: -1;
+	}
+
+	.gameover1 {
+		position: absolute;
+    top: 300px;
+    left: 400px;
+    color: red;
+    font-family: $kingFont;
+    font-size: 30px;
+	}
+
+	.gameover2 {
+		position: absolute;
+	  top: 300px;
+	  right: 467px;
+	  color: red;
+	  font-family: $kingFont;
+	  font-size: 30px;
+	}
+	 
+	
+}
+
