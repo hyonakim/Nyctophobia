@@ -1,3 +1,5 @@
-## Welcome to My Repo
+## A mini game called Nyctophobia
 
-> I am your Readme.md file, you should probably update me.
+### This game gives me the creeps
+
+### Play --> http://nyctophobia.surge.sh/
